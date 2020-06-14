@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header>
+        <header class="desktop">
             <div class="title">
                 <img class="logo" src="./assets/images/ic-logo.svg" alt="Colmar Acadmeny icon"/>
                 <h1><span class="bold">Colmar</span><span class="lighter">Academy</span></h1>
@@ -15,109 +15,142 @@
                 <ul role="presentation">
                     <li><a>On campus</a></li>
                     <li><a>Online</a></li>
-                    <li class="supporting-content"><a>For companies</a></li>
+                    <li><a>For companies</a></li>
                     <li><a>Sign in</a></li>
                 </ul>
             </nav>
         </header>
 
+        <header class="mobile">
+                    <img class="logo" src="./assets/images/ic-logo.svg" alt="Colmar Acadmeny icon"/>
+                <nav>
+                    <ul role="presentation">
+                        <li><i><a></a></i></li>
+                        <li><i><a></a></i></li>
+                        <li><i><a></a></i></li>
+                    </ul>
+                </nav>
+            </header>
+
 
         <main>
-            <section id="intro">
-                <div class="flex-container main-content">
-                <img src="./assets/images/course-marketing.jpg" alt="hero image of a school or something"/>
-                <h2>Learn something new everyday</h2>
-                <p>Lorem ipsum dolor sit amet, <br>
-                consectetur adipiscing elit.</p>
-                <button><a>Start here</a></button>
+            <section id="banner">
+                <div class="flex-container">
+                <img src="./assets/images/banner.jpg" alt="hero image of a school or something" class="lg-img"/>
+                <div class="flex-container column">
+                    <h2>Learn something new everyday</h2>
+                    <p>Lorem ipsum dolor sit amet, <br>
+                    consectetur adipiscing elit.</p>
+                    <button><a>Start here</a></button>
+                </div>
             </div>
             </section>
-            <section class="flex-container supporting-content" id="tuition">
-                <div>
-                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
-                    <h2 class="section-header" id="brushes">Tuition?</h2>
-                    <p>Just because it's a fake school doesn't mean it's free!</p>
-                </div>
-                <div>
-                    <div>
-                        <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
-                        <h3>Orientation date</h3>
-                        <p>Tue 10/1 & Wed 10/12: 8am-3pm</p>
-                        <p><a>Read more</a></p>
+            <section id="information">
+                <div class="flex-container" id="info-flex">
+                    <div class="flex-container column supporting-content" id="tuition">
+                            <img class="lg-img" src="./assets/images/information-main.jpg" alt="student reading" />
+                            <div class="flex-container column">
+                                <h2 class="section-header" id="brushes">Tuition?</h2>
+                                <p>Just because it's a fake school doesn't mean it's free!</p>
+                            </div>
                     </div>
                     <div>
-                        <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
-                        <h3>Our campus</h3>
-                        <p>Find which campus is close by you</p>
-                        <p><a>Read more</a></p>
-                    </div>
-                    <div>
-                        <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
-                        <h3>Our guest lecture</h3>
-                        <p>This old guy will talk to you for 3 or more hours.</p>
-                        <p><a>Read more</a></p>
+                        <div class="flex-container">
+                            <img src="./assets/images/information-orientation.jpg" height="200px" alt="people getting oriented" />
+                            <div class="flex-container column">
+                                <h3>Orientation date</h3>
+                                <p>Tue 10/1 & Wed 10/12: 8am-3pm</p>
+                                <p><a class="read-more">Read more</a></p>
+                            </div>
+                        </div>
+                        <div class="flex-container">
+                            <img src="./assets/images/information-campus.jpg" height="200px" alt="a college campus" />
+                            <div class="flex-container column">
+                                <h3>Our campus</h3>
+                                <p>Find which campus is close by you</p>
+                                <p><a class="read-more">Read more</a></p>
+                            </div>
+                        </div>
+                        <div class="flex-container" id="featured">
+                            <img src="./assets/images/information-guest-lecture.jpg" height="200px" alt="a guest-lecturer" />
+                            <div class="flex-container column">
+                                <h3>Our guest lecture</h3>
+                                <p>This old guy will talk to you for 3 or more hours.</p>
+                                <p><a class="read-more">Read more</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section>
-                <h2 class="section-header" id="brushes">Start learning</h2>
-                <div class="subject-box">
-                    <img class="supporting-content" src="./assets/images/course-marketing.jpg" height="200px" alt="a picture of the class material" />
-                    <h3>Software engineering</h3>
-                    <h4 class="supporting-content">Courses</h4>
-                    <p class="supporting-content">Intro to Python, Intro to Javascript, Advanced HTML</p>
+
+
+            <section id="courses">
+                <h2 class="section-header" id="start-learning">Start learning</h2>
+                <div class="flex-container" id="courses">
+                    <div class="subject-box">
+                        <img class="supporting-content" src="./assets/images/course-software.jpg" height="200px" alt="a picture of the class material" />
+                        <h3>Software engineering</h3>
+                        <h4 class="supporting-content">Courses</h4>
+                        <p class="supporting-content">Intro to Python, Intro to Javascript, Advanced HTML</p>
+                    </div>
+                    <div class="subject-box">
+                        <img class="supporting-content" src="./assets/images/course-computer-art.jpg" height="200px" alt="a picture of the class material" />
+                        <h3>Computer Art</h3>
+                        <h4 class="supporting-content">Courses</h4>
+                        <p class="supporting-content">Once the computers can create art, we will no longer serve any purpose.</p>
+                    </div>
+                    <div class="subject-box">
+                    <img class="supporting-content" src="./assets/images/course-design.jpg" height="200px" alt="a picture of the class material" />
+                        <h3>Design</h3>
+                        <h4 class="supporting-content">Courses</h4>
+                        <p class="supporting-content">Learn about Design... if you dare.</p>
+                    </div>
+                    <div class="subject-box">
+                        <img class="supporting-content" src="./assets/images/course-data.jpg" height="200px" alt="a picture of the class material" />
+                        <h3>Data</h3>
+                        <h4 class="supporting-content">Courses</h4>
+                        <p class="supporting-content">User Experience Design, User Research, Visual Design</p>
+                    </div>
+                    <div class="subject-box">
+                        <img class="supporting-content" src="./assets/images/course-business.jpg" height="200px" alt="a picture of the class material" />
+                        <h3>Business</h3>
+                        <h4 class="supporting-content">Courses</h4>
+                        <p class="supporting-content">Exploiting the Worker 101</p>
+                    </div>
+                    <div class="subject-box">
+                        <img class="supporting-content" src="./assets/images/course-marketing.jpg" height="200px" alt="a picture of the class material" />
+                        <h3>Marketing</h3>
+                        <h4 class="supporting-content">Courses</h4>
+                        <p class="supporting-content">Why would you want to learn about Marketing?</p>
+                    </div>
                 </div>
-                <div class="subject-box">
-                    <img class="supporting-content" src="./assets/images/course-marketing.jpg" height="200px" alt="a picture of the class material" />
-                    <h3>Computer Art</h3>
-                    <h4 class="supporting-content">Courses</h4>
-                    <p class="supporting-content">Once the computers can create art, we will no longer serve any purpose.</p>
-                </div>
-                <div class="subject-box">
-                <img class="supporting-content" src="./assets/images/course-marketing.jpg" height="200px" alt="a picture of the class material" />
-                    <h3>Design</h3>
-                    <h4 class="supporting-content">Courses</h4>
-                    <p class="supporting-content">Learn about Design... if you dare.</p>
-                </div>
-                <div class="subject-box">
-                    <img class="supporting-content" src="./assets/images/course-marketing.jpg" height="200px" alt="a picture of the class material" />
-                    <h3>Data</h3>
-                    <h4 class="supporting-content">Courses</h4>
-                    <p class="supporting-content">User Experience Design, User Research, Visual Design</p>
-                </div>
-                <div class="subject-box">
-                    <img class="supporting-content" src="./assets/images/course-marketing.jpg" height="200px" alt="a picture of the class material" />
-                    <h3>Business</h3>
-                    <h4 class="supporting-content">Courses</h4>
-                    <p class="supporting-content">Exploiting the Worker 101</p>
-                </div>
-                <div class="subject-box">
-                    <img class="supporting-content" src="./assets/images/course-marketing.jpg" height="200px" alt="a picture of the class material" />
-                    <h3>Marketing</h3>
-                    <h4 class="supporting-content">Courses</h4>
-                    <p class="supporting-content">Why would you want to learn about Marketing?</p>
-                </div>
-                </section>
-                <section>
+            </section>
+
+
+            <section id="thesis">
                 <h2 class="section-header">Thesis exhibit</h2>
-                <div class="">
-                    <video height="300px" autoplay>
+                <div class="flex-container" id="thesis-flex">
+                    <div id="video-box">
+                        <video width="857px;"" autoplay>
                             <source src="./assets/videos/thesis.mp4" type="video/mp4">
                             Your browser does not support this video.
-                    </video>
-                    <h3>Reimagine urban</h3>
-                    <p>Some videos feature buildings. Do not be frightened.</p>
+                        </video>
+                        <h3>Reimagine urban</h3>
+                        <p>Some videos feature buildings. Do not be frightened.</p>
+                    </div>
+                <div class="flex-container column">
+                    <div>
+                        <img src="./assets/images/thesis-fisma.jpg" height="200px" alt="a fisma" />
+                        <h3>Fisma: Design and Prototype</h3>
+                        <p>Designer showcase of new prototype product</p>
+                    </div>
+                    <div>
+                        <img src="./assets/images/thesis-now-and-then.jpg" height="200px" alt="new york city" />
+                        <h3>Now and then</h3>
+                        <p>Research study about New York</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="some assorted frames" />
-                    <h3>Fisma: Design and Prototype</h3>
-                    <p>Designer showcase of new prototype product</p>
-                </div>
-                <div>
-                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="some assorted frames" />
-                    <h3>Now and then</h3>
-                    <p>Research study about New York</p>
-                </div>
+            </div>
             </section>
         </main>
 
