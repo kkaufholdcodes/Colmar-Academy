@@ -25,13 +25,12 @@ p {
 
 .flex-container {
     display: flex;
-    padding: 0 1.5rem;
   }
 
   h2 {
-    padding-bottom: 1rem;
-    font-weight: bold;
-    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    font-weight: 800;
+    font-size: 3rem;
 }
 
 h3 {
@@ -221,13 +220,15 @@ footer {
     }
 
     .subject-box {
+        width: 100%;
         flex-direction: row;
     }
 
     .course-name {
-        padding: 1rem 0:
+        padding: 1.5rem 1rem;
         width: 100%;
-        background-color: #9F9F9F;
+        background-color: #D8D8D8;
+        margin: 0.5rem 0.5rem;
     }
 
     #courses {
