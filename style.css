@@ -28,7 +28,7 @@ button {
     color: white;
     padding: 0.5rem 0;
     width: 30%;
-    border
+    height: 24px;
 }
 
 a {
@@ -86,7 +86,9 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 h3 {
@@ -98,6 +100,18 @@ nav {
 
 nav, ul, li {
     display: inline-block;
+}
+
+nav {
+    padding: 0 1.5rem;
+}
+
+nav li {
+    padding: 0 1rem;
+}
+
+nav li:last :last-child {
+    padding-right: 1.5rem;
 }
 
 footer {
