@@ -2,78 +2,123 @@
 <html>
     <head>
         <title>Colmar Academy</title>
-        <link href="./resources/style.css" type="text/css" rel="stylesheet" />
+        <link href="./style.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <nav>
-            <h1>Colmar Academy</h1>
-        </nav>
         <header>
-            <img />
-            <h2>Learn something new everyday</h2>
-            <p>Lorem ipsum dolor sit amet, <br>
-                consectetur adipiscing elit.</p>
-                <button>Start here</button>
+            <div class="title">
+                <img class="logo" src="./assets/images/ic-logo.svg" alt="Colmar Acadmeny icon"/>
+                <h1><span class="bold">Colmar</span><span class="lighter">Academy</span></h1>
+            </div>
+            <nav>
+                <ul role="presentation">
+                    <li><a>On crampus</a></li>
+                    <li><a>Online</a></li>
+                    <li><a>For companies</a></li>
+                    <li><a>Sign in</a></li>
+                </ul>
+            </nav>
         </header>
-        <section>
-            <h2 class="section-header" id="brushes">It doesn't hurt to keep practicing</h2>
-            <img src="./resources/hacksaw.jpeg" height="200px" alt="a hacksaw covered in blood and wood dust" />
-            <h3>Orientation date</h3>
-            <p>Many of the brushes are not actually good for hacking or sawing.</p>
-        </section>
-        <section>
-            <h2 class="section-header" id="brushes">Start learning</h2>
-            <div class="subject-box">
-                <img src="./resources/hacksaw.jpeg" height="200px" alt="a hacksaw covered in blood and wood dust" />
-                <h3>Software engineering</h3>
-                <p>Many of the brushes are not actually good for hacking or sawing.</p>
-            </div>
-            <div class="subject-box">
-                <img src="./resources/hacksaw.jpeg" height="200px" alt="a hacksaw covered in blood and wood dust" />
-                <h3>Design</h3>
-                <p>Many of the brushes are not actually good for hacking or sawing.</p>
-            </div>
-            <div class="subject-box">
-                <img src="./resources/hacksaw.jpeg" height="200px" alt="a hacksaw covered in blood and wood dust" />
-                <h3>Data</h3>
-                <p>Many of the brushes are not actually good for hacking or sawing.</p>
-            </div>
-            <div class="subject-box">
-                <img src="./resources/hacksaw.jpeg" height="200px" alt="a hacksaw covered in blood and wood dust" />
-                <h3>Business</h3>
-                <p>Many of the brushes are not actually good for hacking or sawing.</p>
-            </div>
-            <div class="subject-box">
-                <img src="./resources/hacksaw.jpeg" height="200px" alt="a hacksaw covered in blood and wood dust" />
-                <h3>Marketing</h3>
-                <p>Many of the brushes are not actually good for hacking or sawing.</p>
-            </div>
-            <div class="subject-box">
-                <img src="./resources/hacksaw.jpeg" height="200px" alt="a hacksaw covered in blood and wood dust" />
-                <h3>Software engineering</h3>
-                <p>Many of the brushes are not actually good for hacking or sawing.</p>
-            </div>
-        </section>
-        <section>
-            <h2 class="section-header" id="frames">Thesis exhibit</h2>
-            <div class="">
-                <video class=""></video>
-                <h3>Reimagine urban</h3>
-                <p></p>
-            </div>
-            <div>
-                <img src="./resources/frames.jpeg" height="200px" alt="some assorted frames" />
-                <h3></h3>
-                <p>Assorted frames of diff material: cheese, dirt, etc.</p>
-            </div>
-            <div>
-                <img src="./resources/frames.jpeg" height="200px" alt="some assorted frames" />
-                <h3></h3>
-                <p>Assorted frames of diff material: cheese, dirt, etc.</p>
-            </div>
-        </section>
+
+
+        <main>
+            <section class="flex-container main-content" id="intro">
+                <img src="./assets/images/course-marketing.jpg" alt=""/>
+                <h2>Learn something new everyday</h2>
+                <p>Lorem ipsum dolor sit amet, <br>
+                consectetur adipiscing elit.</p>
+                <button><a>Start here</a></button>
+            </section>
+            <section>
+                <div>
+                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
+                    <h2 class="section-header" id="brushes">Tuition?</h2>
+                    <p>Just because it's a fake school doesn't mean it's free!</p>
+                </div>
+                <div>
+                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
+                    <h3>Orientation date</h3>
+                    <p>Tue 10/1 & Wed 10/12: 8am-3pm</p>
+                    <p><a>Read more</a></p>
+                </div>
+                <div>
+                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
+                    <h3>Our campus</h3>
+                    <p>Find which campus is close by you</p>
+                    <p><a>Read more</a></p>
+                </div>
+                <div>
+                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
+                    <h3>Our guest lecture</h3>
+                    <p>This old guy will talk to you for 3 or more hours.</p>
+                    <p><a>Read more</a></p>
+                </div>
+            </section>
+            <section>
+                <h2 class="section-header" id="brushes">Start learning</h2>
+                <div class="subject-box">
+                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
+                    <h3>Software engineering</h3>
+                    <h4>Courses</h4>
+                    <p>Intro to Python, Intro to Javascript, Advanced HTML</p>
+                </div>
+                <div class="subject-box">
+                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
+                    <h3>Computer Art</h3>
+                    <h4>Courses</h4>
+                    <p>Once the computers can create art, we will no longer serve any purpose.</p>
+                </div>
+                <div class="subject-box">
+                <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
+                    <h3>Design</h3>
+                    <h4>Courses</h4>
+                    <p>Learn about Design... if you dare.</p>
+                </div>
+                <div class="subject-box">
+                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
+                    <h3>Data</h3>
+                    <h4>Courses</h4>
+                    <p>User Experience Design, User Research, Visual Design</p>
+                </div>
+                <div class="subject-box">
+                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
+                    <h3>Business</h3>
+                    <h4>Courses</h4>
+                    <p>Exploiting the Worker 101</p>
+                </div>
+                <div class="subject-box">
+                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="a hacksaw covered in blood and wood dust" />
+                    <h3>Marketing</h3>
+                    <h4>Courses</h4>
+                    <p>Why would you want to learn about Marketing?</p>
+                </div>
+                </section>
+                <section>
+                <h2 class="section-header">Thesis exhibit</h2>
+                <div class="">
+                    <video height="300px" autoplay>
+                            <source src="./assets/videos/thesis.mp4" type="video/mp4">
+                            Your browser does not support this video.
+                    </video>
+                    <h3>Reimagine urban</h3>
+                    <p>Some videos feature buildings. Do not be frightened.</p>
+                </div>
+                <div>
+                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="some assorted frames" />
+                    <h3>Fisma: Design and Prototype</h3>
+                    <p>Designer showcase of new prototype product</p>
+                </div>
+                <div>
+                    <img src="./assets/images/course-marketing.jpg" height="200px" alt="some assorted frames" />
+                    <h3>Now and then</h3>
+                    <p>Research study about New York</p>
+                </div>
+            </section>
+        </main>
+
         <footer>
-            <p>© 2020Colmar Academy. All rights reserved.</p>
+            <p>&#169; 2020Colmar Academy. All rights reserved.</p>
             <nav>
                 <ul role="presentation">
                     <li><a>Terms</a></li>
