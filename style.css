@@ -94,8 +94,6 @@ header {
 
 .logo {
     display: inline-block;
-    padding-left: 2rem;
-    margin-left: 2rem;
 }
 
 .bold {
@@ -133,7 +131,7 @@ button {
     background-color: #4A4A4A;
     color: white;
     padding: 0.5rem 0;
-    width: 60%;
+    width: 15rem;
 }
 
 /*information*/
