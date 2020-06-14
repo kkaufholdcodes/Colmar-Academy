@@ -11,6 +11,7 @@ body {
     background-color: #EAEBEC;
     font-family: Arial, Helvetica, sans-serif;
     color: #4E4E4E;
+    width: 100%;
 }
 
 a {
@@ -21,12 +22,12 @@ a {
 
 p {
     color: #5E5E5E;
-    margin: 15px;
     padding: 1rem;
 }
 
 .flex-container {
     display: flex;
+    width: 100%;
   }
 
   h2 {
@@ -116,6 +117,10 @@ h1 {
     width: 857px;
 }
 
+section {
+    margin-bottom: 0.5rem;
+}
+
 
 /*banner*/
 
@@ -149,6 +154,10 @@ a.read-more {
     width: 60%;
 }
 
+.info-info {
+    width: 300px;
+}
+
 /*courses*/
 
 #start-learning {
@@ -180,6 +189,10 @@ a.read-more {
 
 #thesis-flex {
     justify-content: space-between;
+}
+
+#fisma {
+    padding-left: 2rem;
 }
 
 /*footer*/
@@ -262,5 +275,9 @@ footer {
 
     .info {
         flex-direction: row;
+    }
+
+    footer ul {
+        padding-top: 1rem;;
     }
 }
