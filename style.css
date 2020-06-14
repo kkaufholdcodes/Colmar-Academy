@@ -21,6 +21,8 @@ a {
 
 p {
     color: #5E5E5E;
+    margin: 15px;
+    padding: 1rem;
 }
 
 .flex-container {
@@ -34,8 +36,14 @@ p {
 }
 
 h3 {
-
+    font-size: 2rem;
+    padding: 1rem 1rem;
 }
+
+h4 {
+    padding: 1rem 1rem;
+}
+
 nav {
     text-align: right;
     margin-right: 2rem;
@@ -76,14 +84,17 @@ header {
     justify-content: space-between;
 }
 
+
 .title {
     display: inline-flex;
     align-items: center;
+    margin-left: 2rem;
 }
 
 .logo {
     display: inline-block;
-
+    padding-left: 2rem;
+    margin-left: 2rem;
 }
 
 .bold {
@@ -145,20 +156,30 @@ a.read-more {
     padding: 2rem 0;
 }
 
-#courses {
-    flex-wrap: wrap;
+.courses {
+    flex-wrap: nowrap;
+    width: 100%;
+    display: flex;
     justify-content: space-evenly;
 }
 
 .subject-box {
-    width: 25rem;
     background-color: white;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 /*thesis*/
 
 #thesis {
     background-color: white;
+}
+
+#thesis-flex {
+    justify-content: space-between;
 }
 
 /*footer*/
